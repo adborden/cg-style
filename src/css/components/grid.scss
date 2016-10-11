@@ -1,0 +1,10 @@
+.cg-grid {
+  @include outer-container;
+
+  @for $i from 1 through 12 {
+    .cg-width-#{$i} {
+      color: red;
+      @include span-columns($i);
+    }
+  }
+}
