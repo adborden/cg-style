@@ -1,0 +1,9 @@
+
+@import 'override_vars';
+@import 'base/utility-classes.scss';
+
+@for $i from 1 through length($color-s) {
+  .bg-#{nth($color-s, $i)} { background-color: nth($colorvar-s, $i) !important; }
+}
+
+.bg0 { background-color: transparent !important; }

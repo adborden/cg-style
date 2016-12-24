@@ -56,11 +56,9 @@ $colorvar-s: $color-blue, $color-brightmint, $color-cream, $color-gold, $color-g
 
 @for $i from 1 through length($color-s) {
   %bg-#{nth($color-s, $i)} { background-color: nth($colorvar-s, $i); }
-  .bg-#{nth($color-s, $i)} { background-color: nth($colorvar-s, $i) !important; }
 }
 
 %bg0 { background-color: transparent; }
-.bg0 { background-color: transparent !important; }
 
 /*
 
